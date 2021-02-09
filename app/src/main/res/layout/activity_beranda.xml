@@ -8,40 +8,46 @@
     android:background="#FF934F"
     tools:context=".BerandaActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:drawableLeft="@drawable/ic_user_2"
-        android:textSize="64dp" />
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_user_2" />
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Halo"
-            android:textColor="#FFFFEA"
-            android:textSize="64sp"
-            android:textStyle="bold"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo"
+                android:textColor="#FFFFEA"
+                android:textSize="64sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="(Username)"
+                android:textColor="#FFFFEA"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_gravity="end">-->
+
+
+<!--        </LinearLayout>-->
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="end">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="(Username)"
-            android:textColor="#FFFFEA"
-            android:textSize="64sp"
-            android:textStyle="bold" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,21 +55,23 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="25dp"
-        android:background="#FFFFEA"
+        android:background="@drawable/soft_orange_rounded"
         android:orientation="vertical">
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:ems="10"
             android:inputType="date"
             android:text="Senin, 01 Januari 2020"
             android:textColor="#FF934F"
             android:textSize="24dp" />
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
             android:ems="10"
             android:gravity="end"
             android:inputType="time"
@@ -72,45 +80,48 @@
             android:textSize="24dp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:layout_gravity="center"
-            android:background="#FF934F"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_corner_orange"
             android:orientation="horizontal"
             android:padding="20dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableLeft="@drawable/ic_thermometer" />
-
-            <EditText
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="26"
+                android:src="@drawable/ic_thermometer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26 C"
                 android:textColor="#FFFFFF"
                 android:textSize="64sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:layout_gravity="center"
-            android:background="#FF934F"
+            android:background="@drawable/rounded_corner_orange"
             android:orientation="horizontal"
             android:padding="20dp"
             android:layout_marginTop="20dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableLeft="@drawable/ic_drop" />
-
-            <EditText
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="25"
+                android:src="@drawable/ic_drop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 %"
                 android:textColor="#FFFFFF"
                 android:textSize="64sp"
                 android:textStyle="bold" />
@@ -127,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="#FF934F"
+                android:background="@drawable/orange_rounded"
                 android:text="Lanjut"
                 android:textColor="#FFFFFF"
                 android:textSize="28dp"
